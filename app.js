@@ -11,7 +11,7 @@ function runClock() {
   let minhand = clock.querySelector("div.minute");
   let sechand = clock.querySelector("div.second");
 
-  let hourRotation = 30 * hour;
+  let hourRotation = 30 * hour + 0.5 * min;
   let minRotation = 6 * min + 0.1 * sec;
   let secRotation = 6 * sec + 0.006 * ms;
 
