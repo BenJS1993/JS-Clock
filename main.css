@@ -1,5 +1,39 @@
-.canvas {
-    width: 800;
-    height: 800;
-    background-color: black;
+body {
+  text-align: center !important;
+  justify-content: center !important;
+  align-content: center;
+  align-self: auto;
+}
+
+.clock {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background: #d8d8d8;
+  border-radius: 100px;
+  position: relative;
+  margin: 50px auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.hand {
+  position: absolute;
+  width: 2px;
+  height: 40px;
+  background-color: #111118;
+  bottom: 99px;
+  left: 99px;
+  transform: rotate(340deg);
+  transform-origin: 50% 100%;
+}
+
+.minute {
+  height: 75px;
+}
+
+.second {
+  height: 90px;
+  background-color: #ff4141;
 }
